@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.sp
 import com.example.graduationcard.ui.theme.GraduationCardTheme
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 
@@ -46,7 +47,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) {
-    val image = painterResource(R.drawable.kartu_ucapan)
+    val image = painterResource(R.drawable.graduation_card)
     Box(modifier){
         Image(
             painter = image,
